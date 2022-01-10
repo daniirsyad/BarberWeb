@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link href="style.css" rel="stylesheet" />
+
+    <title>Barber Theme</title>
+    <script
+      src="https://kit.fontawesome.com/a1284d802f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.9.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/8.9.0/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark fixed-top"
+        style="padding: 9px 0"
+      >
+        <div class="container-fluid container1">
+          <a class="navbar-brand" href="#top"
+            ><img src="https://i.postimg.cc/pr1hHvVM/V3-PNG-1.png"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navc">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#testimoni1"
+                  >Testimonial</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery1">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact1">Contact Us</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav justify-content-end mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="container-fluid container1" id="top">
+        <div class="row" style="margin-top: 150px">
+          <div class="col">
+            <h1>Cut hair to your desires</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla paria...
+            </p>
+            <button type="button" class="btn btn-primary btn-lg">
+              BOOK NOW
+            </button>
+          </div>
+          <div class="col">
+            <img
+              src="https://i.postimg.cc/fbs0rp3D/delfina-pan-w-Jo-B8-D3hnzc-unsplash-1.png"
+              class="img-fluid"
+              style="min-width: 300px"
+            />
+          </div>
+        </div>
+      </section>
+      <a id="testimoni1" class="sec-100" style="top: -70"></a>
+      <section class="container1 container-fluid" id="testimoni">
+        <h3 align="center" style="margin: 80px 0 30px 0">
+          Our Satisfied Customers
+        </h3>
+        <div class="card1">
+          <img
+            src="https://i.postimg.cc/pdy3gWmt/mahdi-bafande-qd-PLxl-J6l0-unsplash-1-1.png"
+            class="photo-our"
+          />
+          <div class="box-photo">
+            <img src="kutip.png" style="width: 60px" />
+            <p style="margin: 42px 0">
+              I was able to get an amazing hair. The worker are also very
+              friendly, and the experience was not boring. The atmosphere, the
+              music, the barber, everything.
+            </p>
+            <div style="width: 100%; border: 1px solid white"></div>
+            <div style="display: flex; margin-top: 20px">
+              <div style="width: 64px; height: 64px; border-radius: 50%">
+                <img src="https://i.postimg.cc/SNsxpHzD/Avatar.png" />
+              </div>
+              <div class="mt-0" style="margin: 20px">
+                <h5>Full Name</h5>
+                <p style="font-size: 11px; font-weight: 400">BUSINESSMAN</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <a id="gallery1" class="sec-100" style="top: -100px"></a>
+      <section id="gallery">
+        <div class="container-carousel">
+          <button onclick="scrollLeft1()" class="buttonLeft"><</button>
+          <button onclick="scrollRight()" class="buttonRight">></button>
+          <div class="container-block" id="container-block">
+            <div class="block">
+              <img
+                src="https://i.postimg.cc/zfP3kfdZ/alex-sheldon-09k-XYXCZpe-Y-unsplash.png"
+                class="img-carousel"
+              />
+            </div>
+            <div class="block">
+              <img
+                src="https://i.postimg.cc/tgRV5wpP/brian-lawson-Ald-As-Yrni-Yg-unsplash.png"
+                class="img-carousel"
+              />
+            </div>
+            <div class="block">
+              <img
+                src="https://i.postimg.cc/TYrLXfPg/sayan-ghosh-C99-TE-7-HDI-unsplash.png"
+                class="img-carousel"
+              />
+            </div>
+            <div class="block">
+              <img
+                src="https://i.postimg.cc/fyk2K2s9/dominic-conner-8t-NFr-ujt-GY-unsplash-1.png"
+                class="img-carousel"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <a id="contact1" class="sec-100" style="top: -70px"></a>
+      <section
+        style="
+          background-image: url('https://i.postimg.cc/6pFNbFhj/Rectangle-128.png');
+        "
+        style="background-size: cover"
+        id="contact"
+      >
+        <div class="container container-fluid" style="padding: 2em 0 2em 0">
+          <h3 align="center" style="margin: 0 0 30px 0">
+            I'd like to hear from you
+          </h3>
+          <form style="color: white">
+            <h5 style="font-size: 24px; font-weight: 400">
+              Fill this form to contact us!
+            </h5>
+            <div class="row">
+              <div class="col">
+                <label for="name" class="form-label">Your Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Type your name here..."
+                />
+              </div>
+              <div class="col">
+                <label for="email" class="form-label">Your Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Type your email address here..."
+                />
+              </div>
+            </div>
+            <div>
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                style="background-color: #333333cc; color: white"
+                id="message"
+                rows="3"
+                placeholder="Type what you want to do with your hair here (eg. afro, etc...)"
+              ></textarea>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div
+                  class="g-recaptcha"
+                  data-sitekey="6Le9newbAAAAAIp369DmavEmn8azNtAE6uw-qLJr"
+                ></div>
+              </div>
+              <div class="col" align="right">
+                <button type="submit" class="submit">SUBMIT</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="row container container-fluid p-4">
+        <div class="col col-footer" style="color: white">
+          <h6>JW Barbershop</h6>
+          <p style="max-width: 700px">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <span style="font-size: 10px"
+            ><i class="fas fa-map-marker-alt footer-spaces"></i> JL.Textstdst ,
+            Tebet, Kota Jakarta Selatan, DKI Jakarta 12880</span
+          ><br />
+          <span class="footer-spaces" style="font-size: 10px">&copy</span
+          ><span style="font-size: 10px">2021, All Rights Reserved.</span>
+        </div>
+        <div class="col col-footer col-lg-2">
+          <h6>Our Location</h6>
+          <div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1016207.9407931403!2d106.11746159271884!3d-5.77593609282183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x100c5e82dd4b820!2sDaerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1628328135920!5m2!1sid!2sid"
+              width="264"
+              height="152"
+              style="border: 0; border-radius: 12px"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+    <script src="scripts.js"></script>
+  </body>
+</html>
